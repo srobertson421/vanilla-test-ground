@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="main-nav">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/user/21">User 21</a>
+    <a href="/user/54">User 54</a>
+    <a href="/pokemon">Pokemon</a>
+  </nav>
+  <div class="page" data-path="/">
+    <h1>Home</h1>
+  </div>
+  <div class="page" data-path="/about">
+    <h1>About</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor mauris sed dui rhoncus, 
+      id gravida dolor ornare. Nam vulputate pulvinar turpis, sed faucibus nisi. Pellentesque metus urna, 
+      fermentum nec cursus quis, viverra vel ipsum. Phasellus sed lectus purus. Sed pellentesque dui in 
+      erat mattis scelerisque. Nunc tincidunt arcu sed elementum rutrum. Suspendisse consequat nisl nibh, 
+      id maximus eros blandit id. Fusce suscipit eu leo et pulvinar.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor mauris sed dui rhoncus, 
+      id gravida dolor ornare. Nam vulputate pulvinar turpis, sed faucibus nisi. Pellentesque metus urna, 
+      fermentum nec cursus quis, viverra vel ipsum. Phasellus sed lectus purus. Sed pellentesque dui in 
+      erat mattis scelerisque. Nunc tincidunt arcu sed elementum rutrum. Suspendisse consequat nisl nibh, 
+      id maximus eros blandit id. Fusce suscipit eu leo et pulvinar.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor mauris sed dui rhoncus, 
+      id gravida dolor ornare. Nam vulputate pulvinar turpis, sed faucibus nisi. Pellentesque metus urna, 
+      fermentum nec cursus quis, viverra vel ipsum. Phasellus sed lectus purus. Sed pellentesque dui in 
+      erat mattis scelerisque. Nunc tincidunt arcu sed elementum rutrum. Suspendisse consequat nisl nibh, 
+      id maximus eros blandit id. Fusce suscipit eu leo et pulvinar.
+    </p>
+  </div>
+  <div class="page" data-path="/contact">
+    <h1>Contact</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor mauris sed dui rhoncus, 
+      id gravida dolor ornare. Nam vulputate pulvinar turpis, sed faucibus nisi. Pellentesque metus urna, 
+      fermentum nec cursus quis, viverra vel ipsum. Phasellus sed lectus purus. Sed pellentesque dui in 
+      erat mattis scelerisque. Nunc tincidunt arcu sed elementum rutrum. Suspendisse consequat nisl nibh, 
+      id maximus eros blandit id. Fusce suscipit eu leo et pulvinar.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor mauris sed dui rhoncus, 
+      id gravida dolor ornare. Nam vulputate pulvinar turpis, sed faucibus nisi. Pellentesque metus urna, 
+      fermentum nec cursus quis, viverra vel ipsum. Phasellus sed lectus purus. Sed pellentesque dui in 
+      erat mattis scelerisque. Nunc tincidunt arcu sed elementum rutrum. Suspendisse consequat nisl nibh, 
+      id maximus eros blandit id. Fusce suscipit eu leo et pulvinar.
+    </p>
+  </div>
+  <div class="page" data-path="/user/:id">
+    <h1>User <div data-param="id"></div></h1>
+  </div>
+  <div class="page" data-path="/pokemon">
+    <h1>Random Pokemon</h1>
+    <button id="fetch-poke-btn">Get a Random Pokemon!</button>
+    <div id="poke-container">
+      <h3 id="poke-name" style="text-transform: capitalize;"></h3>
+      <img id="poke-img" alt="Pokemon" />
+    </div>
+  </div>
+  <script src="/app.js" type="module"></script>
+  <script src="/pokemon.js" type="module"></script>
+</body>
+</html>
